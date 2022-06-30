@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3ccd00aad8.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>RTHELPER</title>
+</head>
+
+<body>
+    <nav>
+        <div class="col">
+            <div class="logo">RTHELPER</div>
+        </div>
+        <div class="col">
+            <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+    <main>
+        <div class="main-container col wth-80 gap-1">
+            <div class="container">
+                <div class="title"><i class="fa-solid fa-code icon mr" id="autoIcon"></i><p class="small-hidden">GENERADOR </p>AUTOMÁTICO</div>
+                <form class="auto gap" autocomplete="off">
+                    <div class="col">
+                        <div class="row" id="client">
+                            <input type="number" placeholder="Número del cliente...">
+                            <div class="input-icon j-center a-center"><i class="fa-solid fa-hashtag"></i></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row" id="name">
+                            <input type="text" placeholder="Nombre del cliente..." maxlength="28">
+                            <div class="input-icon j-center a-center"><i class="fa-solid fa-user"></i></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row" id="reason">
+                            <input type="text" placeholder="Motivo del llamado..." maxlength="18">
+                            <div class="input-icon j-center a-center"><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                        <div class="row relative">
+                            <ul id="reasonList">
+                                <span>Sin resultados</span>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row" id="additional">
+                            <input type="text" placeholder="Selecciona el motivo..." disabled>
+                            <div class="input-icon j-center a-center"><i class="fa-solid fa-ban"></i></div>
+                        </div>
+                        <div class="row relative">
+                            <ul id="additionalList"></ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row gap">
+                            <button type="reset" id="clearButton"><i class="fa-solid fa-delete-left mr"></i>Limpiar</button>
+                            <button type="submit" id="generateButton"><i class="fa-solid fa-plus mr"></i>Generar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <div class="title"><i class="fa-regular fa-keyboard icon mr" id="handIcon"></i><p class="small-hidden">GENERADOR </p>MANUAL</div>
+            </div>
+        </div>
+        <div class="side-container col wth-20">
+            <div class="container">
+                <div class="title"><i class="fa-solid fa-link icon mr" id="linksIcon"></i>LINKS ÚTILES</div>
+                <div class="list" id="linksList">
+                    <a href="http://info-contactcom.telecentro.local/intranet/">Intranet - Técnica</a>
+                    <a href="http://crmext.telecentro.local/">CRM - Gestor de usuarios</a>
+                    <a href="https://usuarios.telecentro.net.ar/">I3 - Sistema de usuarios</a>
+                    <a href="https://www.telecentro.com.ar/canales">CATV - Grilla de canales</a>
+                    <a href="https://media.discordapp.net/attachments/856884415829114900/952999054424539186/unknown.png">Pack Inicial - Grilla de canales</a>
+                    <a href="https://call.telecentro.net.ar/administracion/adm_recuperoequipos.html">Devolución de equipos CM/DD</a>
+                    <a href="http://call.telecentro.net.ar/administracion/adm_instalaciones_armados.html">Estados armado edificios</a>
+                    <a href="https://ayuda.telecentro.com.ar/sucursales-rapipago-habilitadas-para-devolucion-de-equipos/">Sucursales Rapipago</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="row j-center">
+        <div class="alert-container"></div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
